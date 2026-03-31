@@ -101,6 +101,10 @@ a {
     color: #0F3D2E;
 }
 
+body.travado{
+    overflow: hidden;
+}
+
 .projetos {
     height: 100vh;
     display: grid;
@@ -198,6 +202,26 @@ a {
 
 .div-imagem-projeto:hover .div-texto-projeto {
     background: rgba(0, 0, 0, 0.5);
+}
+
+.div-projeto-flutuante{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: white;
+}
+
+.botao-de-fechar{
+    border:1px solid black;
+    height: 2rem;
+}
+
+.conteudo{
+    border: 1px solid red;
+    height: 100vh;
 }
 
 @media(min-width: 768px) {
