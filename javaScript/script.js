@@ -1,7 +1,3 @@
-// function reorganizarProjetos(){
-//     const
-// }
-
 
 const text = "Eai! Me chamo Rafael e seja bem-vindo ao meu portfólio!";
 let i = 0;
@@ -39,9 +35,13 @@ escrever();
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) { entry.target.classList.add("show"); }
-    })
-})
+    });
+});
 
 document.querySelectorAll(".hidden").forEach(el => {
     observer.observe(el);
-})
+});
+
+document.getElementById("buttonClose1").addEventListener("click", ()=>{
+    document.querySelector(".div-projeto-flutuante").style.opacity = 0;
+});

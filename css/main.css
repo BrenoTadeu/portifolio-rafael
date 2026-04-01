@@ -12,7 +12,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.main-content{
+.main-content {
     display: flex;
     flex-direction: column;
 }
@@ -23,7 +23,7 @@
     padding: 0 13px;
 }
 
-header{
+header {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -68,7 +68,7 @@ a {
     color: #0F3D2E;
 }
 
-.div-fixa{
+.div-fixa {
     width: 20%;
 }
 
@@ -101,7 +101,7 @@ a {
     color: #0F3D2E;
 }
 
-body.travado{
+body.travado {
     overflow: hidden;
 }
 
@@ -204,7 +204,7 @@ body.travado{
     background: rgba(0, 0, 0, 0.5);
 }
 
-.div-projeto-flutuante{
+.div-projeto-flutuante {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -214,12 +214,23 @@ body.travado{
     background-color: white;
 }
 
-.botao-de-fechar{
-    border:1px solid black;
+.botao-de-fechar {
+    border: 1px solid black;
     height: 2rem;
+    display: flex;
+    justify-content: end;
+
 }
 
-.conteudo{
+.buttonClose {
+    border-radius: 100%;
+}
+
+.buttonClose:hover {
+    background-color: #7878789e;
+}
+
+.conteudo {
     border: 1px solid red;
     height: 100vh;
 }
@@ -230,19 +241,19 @@ body.travado{
         padding: 0 13px;
     }
 
-    .main-content{
+    .main-content {
         flex-direction: row;
         align-items: flex-start;
         padding: 0;
     }
 
-    .textSection{
+    .textSection {
         width: 35%;
         top: 150px;
         position: sticky;
     }
 
-    .centerindex{
+    .centerindex {
         justify-content: flex-start;
     }
 
@@ -250,27 +261,28 @@ body.travado{
         min-height: 20dvh;
     }
 
-   .projetos {
+    .projetos {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, max-content)); 
+        grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
         gap: 10px;
         width: 100%;
         justify-content: end;
         transform: translateY(100px);
         transition: 1s ease;
-        padding-left: 10%; 
+        padding-left: 10%;
     }
 
     .project {
-        width: auto; /* Ocupa a largura da coluna do grid */
+        width: auto;
+        /* Ocupa a largura da coluna do grid */
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin:0;
+        margin: 0;
     }
 
     .div-imagem-projeto {
-        width: 100%; 
+        width: 100%;
         max-width: 400px;
         height: 300px;
     }
